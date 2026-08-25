@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Module 3 solution - custom styles
+   Loaded AFTER bootstrap.min.css so these rules win where they overlap.
+   ========================================================================== */
+
+/* ----- Navbar -------------------------------------------------------------
+   No 'navbar-fixed-top' is used in the HTML, so the navbar scrolls away
+   with the page. These rules just make the brand a little bigger.          */
+
+.navbar-default {
+  background-color: #b3b3b3;
+  border-color: #999999;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #000000;
+  font-size: 28px;
+  font-weight: bold;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-default .navbar-toggle {
+  margin-top: 18px;
+  border-color: #666666;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+
+/* ----- Mobile dropdown menu ----------------------------------------------
+   Full window width, with its own background color so it stands out.
+   Bootstrap shows .navbar-collapse automatically at >=768px, so it is
+   hidden here for the tablet (sm) and desktop (md/lg) views.               */
+
+#mobile-menu {
+  background-color: #dddddd;
+}
+
+#mobile-menu .navbar-nav {
+  margin: 0;
+}
+
+#mobile-menu .navbar-nav > li > a {
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #666666;
+}
+
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+/* ----- Page heading ------------------------------------------------------ */
+
+h1 {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* ----- Menu section ------------------------------------------------------
+   Tall enough that the page has to be scrolled, with a background color
+   that distinguishes it from the rest of the content.                      */
+
+.menu-section {
+  background-color: #cccccc;
+  min-height: 1000px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.menu-section h3 {
+  font-weight: bold;
+  margin-top: 5px;
+}
